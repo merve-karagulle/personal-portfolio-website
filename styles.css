@@ -781,3 +781,60 @@ footer {
     transition: none;
   }
 }
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container,
+  .hero,
+  .section,
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 24px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 44px;
+    line-height: 1.05;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero-buttons,
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons a,
+  .buttons a,
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stats,
+  .cards,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    width: calc(100% - 32px);
+    margin: 16px auto;
+  }
+}
